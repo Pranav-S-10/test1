@@ -31,16 +31,16 @@ Build and deploy a simple web application on AWS EC2 using Docker, configure bas
    ```
 2. Tag and push the image to Docker Hub:
    ```bash
-   sudo docker tag my-web-app rpillaiakshay/project1webapp:latest
+   sudo docker tag my-web-app pranavsmannalath/project1webapp:latest
    sudo docker login
-   sudo docker push rpillaiakshay/project1webapp:latest
+   sudo docker push pranavsmannalath/project1webapp:latest
    ```
 
 ### 3. Deploy on EC2
 1. SSH into the EC2 instance and pull the Docker image:
    ```bash
-   sudo docker pull rpillaiakshay/project1webapp:latest
-   sudo docker run -d -p 80:80 rpillaiakshay/project1webapp:latest
+   sudo docker pull pranavsmannalath/project1webapp:latest
+   sudo docker run -d -p 80:80 pranavsmannalath/project1webapp:latest
    ```
 2. Ensure port 80 is open for web traffic.
 
@@ -61,6 +61,6 @@ Build and deploy a simple web application on AWS EC2 using Docker, configure bas
    ```
 
 ## Outputs
-- **Docker Image**: docker pull rpillaiakshay/project1webapp:latest
+- **Docker Image**: docker pull pranavsmannalath/project1webapp:latest
 ## Conclusion
 This project demonstrates building and deploying a simple web application on AWS EC2 using Docker, with monitoring capabilities via Prometheus and Grafana. The setup ensures scalability and real-time system monitoring.
